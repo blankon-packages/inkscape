@@ -1,22 +1,81 @@
-Source: blankon-wallpapers
-Section: x11
+Source: inkscape
+Section: graphics
 Priority: optional
-Maintainer: BlankOn Developers <BlankOn@googlegroups.com>
-Build-Depends: debhelper (>= 8), cdbs (>= 0.4.90~), python (>= 2.6.6-3~)
-Build-Depends-Indep: python-distutils-extra
-Standards-Version: 3.9.3
+Vcs-git: git://git.debian.org/git/collab-maint/inkscape.git
+Vcs-Browser: http://git.debian.org/?p=git/collab-maint/inkscape.git
+Homepage: http://www.inkscape.org/
+Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
+XSBC-Original-Maintainer: Wolfram Quester <wolfi@sigxcpu.org>
+Build-Depends: autoconf,
+               automake,
+               debhelper (>= 7.0.0),
+               dh-translations,
+               intltool,
+               libart-2.0-dev (>= 2.3.10),
+               libaspell-dev,
+               libboost-dev,
+               libgc-dev (>= 1:6.8),
+               libglib2.0-dev,
+               libgnomevfs2-dev,
+               libgtk2.0-dev (>= 2.10.0),
+               libgtkmm-2.4-dev,
+               libgtkspell-dev,
+               libgsl0-dev,
+               liblcms2-dev,
+               libmagick++-dev,
+               libpango1.0-dev,
+               libpng12-dev,
+               libpoppler-glib-dev,
+               libpopt-dev,
+               libsigc++-2.0-dev (>= 2.0.16-2),
+               libtool,
+               libwpd-dev,
+               libwpg-dev,
+               libxml-parser-perl,
+               libxml2-dev (>= 2-2.4.24),
+               libxslt1-dev,
+               pkg-config,
+               python-dev,
+	       quilt,
+               zlib1g-dev
+Standards-Version: 3.8.1
 
-Package: blankon-wallpapers
-Architecture: all
-Section: metapackages
-Depends: ${misc:Depends},
-         blankon-wallpapers-suroboyo
-Conflicts: blankon-wallpapers-rote
-Description: BlankOn Wallpapers
- The default BlankOn wallpaper. This is also a meta-package depending on the 
- other default wallpapers for the current BlankOn release.
-
-Package: blankon-wallpapers-suroboyo
-Architecture: all
-Depends: ${misc:Depends}
-Description: BlankOn 9 Wallpapers
+Package: inkscape
+Architecture: any
+Homepage: http://www.inkscape.org/
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: dia | dia-gnome,
+          ruby,
+          libsvg-perl,
+          libxml-xql-perl,
+          pstoedit,
+          transfig
+Recommends: aspell,
+            libwmf-bin,
+            imagemagick,
+            python-numpy,
+            python-lxml,
+            python-uniconvertor,
+            libgnomevfs2-extra,
+            perlmagick
+Description: vector-based drawing program
+ Inkscape loads and saves a subset of the SVG (Scalable Vector Graphics)
+ format, a standard maintained by the WWW consortium.
+ .
+ Inkscape user interface should be familiar from CorelDraw and similar
+ drawing programs. There are rectangles, ellipses, text items, bitmap
+ images and freehand curves.
+ As an added bonus, both vector and bitmap objects can have alpha
+ transparency and can be arbitrarily transformed.
+ .
+ Inkscape supports multiple opened files and multiple views per file.
+ Graphics can be printed and exported to png bitmaps.
+ .
+ Some of the import and export features are provided using the packages
+ dia, libwmf-bin, pstoedit, skencil, imagemagick, and perlmagick.
+ .
+ Other extensions use ruby, libxml-xql-perl, python-numpy, and python-lxml.
+ You must have these packages to make full use of all extensions and effects.
+ .
+ If you want to use the spellchecker, you have to install aspell and the
+ respective language-pack, e.g. aspell-en or aspell-de.
