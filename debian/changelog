@@ -1,8 +1,9 @@
 inkscape (0.48.4-0blankon1) rote-updates; urgency=low
 
-  * upstream release.
+  * New upstream release
+  * Changes Maintainer
 
- -- mijortsa <azis.astrojim@gmail.com>  Wed, 09 Jan 2013 17:48:17 +0700
+ -- mijortsa <azis.astrojim@surabaya.di.blankon.in>  Thu, 10 Jan 2013 02:05:14 +0700
 
 inkscape (0.48.4-0ubuntu1) raring; urgency=low
 

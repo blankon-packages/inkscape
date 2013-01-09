@@ -4,7 +4,7 @@ Priority: optional
 Vcs-git: git://git.debian.org/git/collab-maint/inkscape.git
 Vcs-Browser: http://git.debian.org/?p=git/collab-maint/inkscape.git
 Homepage: http://www.inkscape.org/
-Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
+Maintainer: BlankOn Developers <BlankOn-dev@googlegroups.com>
 XSBC-Original-Maintainer: Wolfram Quester <wolfi@sigxcpu.org>
 Build-Depends: autoconf,
                automake,
