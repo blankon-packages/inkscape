@@ -1,3 +1,4 @@
 01-fix-datamatrix-ui.dpatch
 02-drop-pdf-ps.diff
-01_add_unity_quicklist_support.patch
+03-CVE-2012-5656.diff
+04-fix-LP911146.diff
