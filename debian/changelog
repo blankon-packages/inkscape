@@ -1,3 +1,9 @@
+inkscape (0.48.3.1-1.3blankon2) rote-updates; urgency=low
+
+  * 05-fix-convert-text-to-braile.diff (#1223) 
+
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 15 Jan 2013 02:18:39 +0700
+
 inkscape (0.48.3.1-1.3blankon1) rote-updates; urgency=low
 
   * Changes: debian/control Maintainer

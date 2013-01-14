@@ -2,3 +2,4 @@
 02-drop-pdf-ps.diff
 03-CVE-2012-5656.diff
 04-fix-LP911146.diff
+05-fix-convert-text-to-braile.diff
