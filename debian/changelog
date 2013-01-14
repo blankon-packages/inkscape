@@ -1,3 +1,10 @@
+inkscape (0.48.3.1-1.3blankon3) suroboyo; urgency=low
+
+  * No Changes
+  * Upload to suroboyo
+
+ -- Aftian <aftian@localhost>  Tue, 15 Jan 2013 02:23:23 +0700
+
 inkscape (0.48.3.1-1.3blankon2) rote-updates; urgency=low
 
   * 05-fix-convert-text-to-braile.diff (#1223) 
