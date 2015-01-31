@@ -1,5 +1,1 @@
-01-fix-datamatrix-ui.dpatch
-02-drop-pdf-ps.diff
-03-CVE-2012-5656.diff
-04-fix-LP911146.diff
-05-fix-convert-text-to-braile.diff
+0001-Drop_PS_and_PDF_support_in_MimeType.patch

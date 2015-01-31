@@ -1,22 +1,131 @@
-inkscape (0.48.3.1-1.3blankon3) suroboyo; urgency=low
+inkscape (0.91~pre4-1blankon1) tambora; urgency=medium
 
-  * No Changes
-  * Upload to suroboyo
+  * New Upstream Release
+  * Upload to Tambora
 
- -- Aftian <aftian@localhost>  Tue, 15 Jan 2013 02:23:23 +0700
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Sun, 01 Feb 2015 05:11:04 +0700
 
-inkscape (0.48.3.1-1.3blankon2) rote-updates; urgency=low
+inkscape (0.91~pre4-1) experimental; urgency=medium
 
-  * 05-fix-convert-text-to-braile.diff (#1223) 
+  * New upstream pre-release
 
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 15 Jan 2013 02:18:39 +0700
+ -- Matteo F. Vescovi <mfv@debian.org>  Mon, 19 Jan 2015 10:16:13 +0100
 
-inkscape (0.48.3.1-1.3blankon1) rote-updates; urgency=low
+inkscape (0.91~pre3-1) experimental; urgency=medium
 
-  * Changes: debian/control Maintainer
-  * Upload to rote-updates 
+  * New upstream pre-release
+  * debian/control: Uploader e-mail address updated
+  * debian/control: S-V bump 3.9.5 => 3.9.6 (no changes needed)
 
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Sun, 13 Jan 2013 11:37:47 +0700
+ -- Matteo F. Vescovi <mfv@debian.org>  Thu, 18 Dec 2014 09:30:56 +0100
+
+inkscape (0.91~pre2-1) experimental; urgency=medium
+
+  * New upstream pre-release
+
+ -- Matteo F. Vescovi <mfvescovi@gmail.com>  Thu, 21 Aug 2014 14:48:57 +0200
+
+inkscape (0.91~pre1-1) experimental; urgency=medium
+
+  * New upstream pre-release
+    - debian/control: poppler versioning dropped
+    - debian/patches/: patchset updated
+      - 0002-Fix_FTBFS_on_poppler-0.26.patch dropped (applied upstream)
+  * debian/control: libcdr-dev and libvisio-dev b-deps added (Closes: #751090)
+
+ -- Matteo F. Vescovi <mfvescovi@gmail.com>  Mon, 23 Jun 2014 17:11:17 +0200
+
+inkscape (0.91~pre0-1) experimental; urgency=medium
+
+  * New upstream pre-release
+    - debian/control: python-lxml b-dep added
+    - debian/rules: dh_auto_test overridden for test purpose
+    - debian/patches/: patchset refreshed against v0.91~pre0
+      - 0001-Fix_Datamatrix_UI_issue.patch dropped (applied upstream)
+      - 0002-Drop_PS_and_PDF_support_in_MimeType.patch => #0001
+      - 0003-Fix_LP_-911146.patch dropped (applied upstream)
+      - 0004-Fix_FTBFS_on_gcc-4.8.patch dropped (applied upstream)
+      - 0005-Fix_FreeType_include.patch dropped (applied upstream)
+      - 0006-Fix_FTBFS_on_poppler-0.26.patch updated and => #0002
+  * debian/control: b-dep bump to use poppler (>= 0.26)
+
+ -- Matteo F. Vescovi <mfvescovi@gmail.com>  Thu, 05 Jun 2014 15:45:25 +0200
+
+inkscape (0.48.4-5) unstable; urgency=medium
+
+  * debian/patches/: patchset updated
+    - 0006-Fix_FTBFS_on_poppler-0.26.patch added
+
+ -- Matteo F. Vescovi <mfvescovi@gmail.com>  Thu, 05 Jun 2014 09:05:43 +0200
+
+inkscape (0.48.4-4) unstable; urgency=medium
+
+  * debian/: python dependency fixed
+  * debian/control: b-dep bump liblcms1-dev => liblcms2-dev (Closes: #745533)
+
+ -- Matteo F. Vescovi <mfvescovi@gmail.com>  Wed, 23 Apr 2014 09:22:50 +0200
+
+inkscape (0.48.4-3) unstable; urgency=medium
+
+  * debian/control: S-V bump 3.9.4 => 3.9.5 (no changes needed)
+  * debian/control: Uploader e-mail address updated
+  * debian/patches/: patchset updated
+    - 0005-Fix_FreeType_include.patch added (Closes: #733118)
+      Thanks to Adam Conrad for the patch.
+
+ -- Matteo F. Vescovi <mfvescovi@gmail.com>  Fri, 27 Dec 2013 09:45:37 +0100
+
+inkscape (0.48.4-2) unstable; urgency=low
+
+  * debian/control: fields update
+    - Duplicate Homepage field removed
+    - VCS-* fields repositioned
+  * debian/watch: path updated
+  * debian/: dh bump 7 => 9
+  * debian/source/format: 3.0 (quilt) file added
+  * debian/patches/: patchset re-worked using gbp-pq
+    - patches re-worked using gbp-pq (authorships kept)
+    - debian/control: quilt b-dep dropped
+    - debian/rules: quilt usage dropped
+  * debian/gbp.conf: file added
+  * debian/control: autotools-dev b-dep added
+  * debian/rules: drastic simplification
+  * debian/control: S-V bump 3.8.3 => 3.9.4 (no changes needed)
+  * debian/control: python-lxml Suggests => Recommends (Closes: #389540)
+  * debian/control: python-numpy Suggests => Recommends (Closes: #440566)
+  * debian/control: libgnomevfs2-extra Suggests => Recommends
+    (Closes: #602599)
+  * debian/control: skencil Suggests dropped.
+    The package has been removed from unstable
+    on 2010-09-03 and from testing on 2010-09-04. (Closes: #712192)
+  * debian/control: transfig added to Recommends (Closes: #601770)
+  * debian/control: python dropped from Suggests (Closes: #628009)
+  * debian/control: Package description updated.
+    Thanks to Phil Bull <philbull@gmail.com> for the new description.
+    (Closes: #635244) (LP: #811634)
+
+ -- Matteo F. Vescovi <mfv.debian@gmail.com>  Tue, 02 Jul 2013 17:25:52 +0200
+
+inkscape (0.48.4-1) unstable; urgency=low
+
+  * Upload to unstable
+  * debian/control: added myself to Uploaders
+  * debian/patches/: patchset updated
+    - 04-Fix_FTBFS_on_gcc-4.8.patch added (Closes: #701297)
+
+ -- Matteo F. Vescovi <mfv.debian@gmail.com>  Fri, 21 Jun 2013 15:13:32 +0200
+
+inkscape (0.48.4-0.1) experimental; urgency=low
+
+  * Non-maintainer upload.
+  * New upstream release (Closes: #696181)
+    - debian/patches/: patch #03 for CVE-2012-5656
+      was merged upstream, so dropped our copy
+    - libpng15 incompatibility fixed (Closes: #649975)
+    - fixes compatibility with poppler 0.20.x (Closes: #679890)
+  * debian/changelog: old NMU changelog entry added (Closes: #564022)
+
+ -- Matteo F. Vescovi <mfv.debian@gmail.com>  Thu, 24 Jan 2013 10:21:49 +0100
 
 inkscape (0.48.3.1-1.3) unstable; urgency=low
 
@@ -225,6 +334,14 @@ inkscape (0.46-6) unstable; urgency=low
     (closes: #514549)
 
  -- Wolfram Quester <wolfi@sigxcpu.org>  Sun, 08 Mar 2009 12:16:45 +0100
+
+inkscape (0.46-5.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * 03-gtk-includes.dpatch: patch from Ubuntu to fix FTBFS caused by
+    wrong GTK+ includes. Closes: #518633.
+
+ -- Josselin Mouette <joss@debian.org>  Mon, 23 Mar 2009 20:35:51 +0100
 
 inkscape (0.46-5) unstable; urgency=low
 
