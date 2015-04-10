@@ -1,9 +1,31 @@
-inkscape (0.91~pre4-1blankon1) tambora; urgency=medium
+inkscape (0.91-3blankon1) tambora; urgency=medium
 
-  * New Upstream Release
-  * Upload to Tambora
+  * New upstream release
+  * Merge with Debian Experimental
 
- -- Rahman Yusri Aftian <aftian@di.blankon.in>  Sun, 01 Feb 2015 05:11:04 +0700
+ -- Mahyuddin <yudi.al@gmail.com>  Fri, 10 Apr 2015 20:58:51 +0700
+
+inkscape (0.91-3) experimental; urgency=medium
+
+  * Cherry-pick commit from unstable suite
+    - debian/control: build-dependencies updated [b4f5c6f]
+      - librevenge-dev added
+      - libwpd-dev (>= 0.9.0) dropped
+      - libwpg-dev (>= 0.2.0) bumped to libwpg-dev (>= 0.3.0)
+
+ -- Matteo F. Vescovi <mfv@debian.org>  Thu, 12 Feb 2015 15:04:45 +0100
+
+inkscape (0.91-2) experimental; urgency=medium
+
+  * debian/rules: override_dh_auto_test dropped (Closes: #776857)
+
+ -- Matteo F. Vescovi <mfv@debian.org>  Mon, 02 Feb 2015 17:58:28 +0100
+
+inkscape (0.91-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Matteo F. Vescovi <mfv@debian.org>  Mon, 02 Feb 2015 12:10:35 +0100
 
 inkscape (0.91~pre4-1) experimental; urgency=medium
 
