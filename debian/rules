@@ -1,8 +1,7 @@
 #!/usr/bin/make -f
 
 DESTDIR = $(CURDIR)/debian/inkscape
-
-DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
+export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 
 CFLAGS += -Wall
 CXXFLAGS += -Wall
@@ -14,16 +13,6 @@ else
   CFLAGS += -O2
   CXXFLAGS += -O2
 endif
-
-ifneq (,$(findstring $(DEB_HOST_ARCH),alpha))
-  ALPHA_CFLAGS = -mieee
-  ALPHA_CXXFLAGS = -mieee
-  ALPHA_LDFLAGS = -Wl,--no-relax
-endif
-
-export DEB_CFLAGS_MAINT_APPEND := $(ALPHA_CFLAGS)
-export DEB_CXXFLAGS_MAINT_APPEND := $(ALPHA_CXXFLAGS)
-export DEB_LDFLAGS_MAINT_APPEND := $(ALPHA_LDLAGS)
 
 %:
 	dh $@ --buildsystem=autoconf --parallel --with autotools_dev,python2

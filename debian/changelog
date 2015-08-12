@@ -1,9 +1,38 @@
-inkscape (0.91-3blankon1) tambora; urgency=medium
+inkscape (0.91-5blankon1) tambora; urgency=medium
 
-  * New upstream release
-  * Merge with Debian Experimental
+  * Rebuild 
 
- -- Mahyuddin <yudi.al@gmail.com>  Fri, 10 Apr 2015 20:58:51 +0700
+ -- Mahyuddin <yudi.al@gmail.com>  Wed, 12 Aug 2015 20:47:28 +0700
+
+inkscape (0.91-5) unstable; urgency=medium
+
+  [ Matteo F. Vescovi ]
+  * debian/control: dh-python b-dep added
+  * debian/README.source: file dropped (Closes: #696924)
+
+  [ Mattia Rizzolo ]
+  * debian/patches/reproducible-build.patch: add to allow reproducible build.
+  * debian/rules: enable hardening.
+  * debian/control: Replace recommends on perlmagick (which is a transitional
+    package) by libimage-magick-perl.
+    Thanks to Martin Michlmayr <tbm@hp.com> for reporting (Closes: #789232)
+
+ -- Mattia Rizzolo <mattia@mapreri.org>  Fri, 19 Jun 2015 08:05:18 +0000
+
+inkscape (0.91-4) unstable; urgency=medium
+
+  * Upload to unstable
+
+  [ Matteo F. Vescovi ]
+  * debian/control: set DMM Team as Maintainer
+  * debian/gbp.conf: git-dch -> dch parameter fixed
+
+  [ Mattia Rizzolo ]
+  * debian/control: add myself to Uploaders
+  * debian/control: update Vcs-* links to point
+    the repo in the pkg-multimedia namespace
+
+ -- Matteo F. Vescovi <mfv@debian.org>  Thu, 30 Apr 2015 08:39:35 +0200
 
 inkscape (0.91-3) experimental; urgency=medium
 
@@ -41,11 +70,50 @@ inkscape (0.91~pre3-1) experimental; urgency=medium
 
  -- Matteo F. Vescovi <mfv@debian.org>  Thu, 18 Dec 2014 09:30:56 +0100
 
+inkscape (0.48.5-3) unstable; urgency=medium
+
+  * debian/patches/: patchset updated
+    - 0006-Update_to_new_libwpg.patch refreshed
+    - 0007-Fix_API_mismatch.patch added (Closes: #754716)
+      Thanks to Pino Toscano (pino) for the patch.
+
+ -- Matteo F. Vescovi <mfvescovi@gmail.com>  Fri, 19 Sep 2014 11:11:07 +0200
+
 inkscape (0.91~pre2-1) experimental; urgency=medium
 
   * New upstream pre-release
 
  -- Matteo F. Vescovi <mfvescovi@gmail.com>  Thu, 21 Aug 2014 14:48:57 +0200
+
+inkscape (0.48.5-2) unstable; urgency=medium
+
+  * debian/patches/: patchset updated
+    - 0006-Update_to_new_libwpg.patch added (Closes: #753430)
+      Thanks to Rene Engelhard (rene) for the patch.
+  * debian/control: build-dependencies updated
+    - librevenge-dev added
+    - libwpd-dev (>= 0.9.0) dropped
+    - libwpg-dev (>= 0.2.0) bumped to libwpg-dev (>= 0.3.0)
+  * debian/: dh-autoreconf usage applied
+
+ -- Matteo F. Vescovi <mfvescovi@gmail.com>  Sat, 09 Aug 2014 14:22:26 +0200
+
+inkscape (0.48.5-1) unstable; urgency=medium
+
+  [ Luca Bruno ]
+  * debian/rules: fix FTBFS on alpha (Closes: #738155)
+
+  [ Mattia Rizzolo ]
+  * debian/patches/: patchset updated against v0.48.5
+    - 0004-Fix_FTBFS_on_gcc-4.8.patch refreshed
+    - 0005-Fix_FreeType_include.patch dropped (applied upstream)
+    - 0006-Fix_FTBFS_on_poppler-0.26.patch dropped (applied upstream)
+    - 0005-Fix_FTBFS_due_to_tests.patch added
+
+  [ Matteo F. Vescovi ]
+  * Imported Upstream version 0.48.5
+
+ -- Matteo F. Vescovi <mfvescovi@gmail.com>  Tue, 08 Jul 2014 15:49:42 +0200
 
 inkscape (0.91~pre1-1) experimental; urgency=medium
 

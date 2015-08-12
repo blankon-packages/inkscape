@@ -1,14 +1,16 @@
 Source: inkscape
 Section: graphics
 Priority: optional
-Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
-XSBC-Original-Maintainer: Wolfram Quester <wolfi@sigxcpu.org>
-Uploaders: Matteo F. Vescovi <mfv@debian.org>
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Matteo F. Vescovi <mfv@debian.org>,
+ Mattia Rizzolo <mattia@mapreri.org>
 Build-Depends:
  autoconf,
  automake,
  autotools-dev,
  debhelper (>= 9),
+ dh-python,
  intltool,
  libart-2.0-dev (>= 2.3.10),
  libaspell-dev,
@@ -42,8 +44,8 @@ Build-Depends:
  zlib1g-dev
 Standards-Version: 3.9.6
 Homepage: http://www.inkscape.org/
-Vcs-Git: git://anonscm.debian.org/collab-maint/inkscape.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/inkscape.git
+Vcs-Git: git://anonscm.debian.org/pkg-multimedia/inkscape.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-multimedia/inkscape.git
 
 Package: inkscape
 Architecture: any
@@ -55,8 +57,8 @@ Recommends:
  aspell,
  imagemagick,
  libgnomevfs2-extra,
+ libimage-magick-perl,
  libwmf-bin,
- perlmagick,
  pstoedit,
  python-lxml,
  python-numpy,
